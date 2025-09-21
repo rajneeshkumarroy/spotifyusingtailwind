@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <link rel="icon" href="./assests/logo.png" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white overflow-hidden">
+   <div class="flex h-screen p-2">
+    <div class="bg-black hidden md:flex md:w-[280px] lg:w-[370px] rounded-xl mr-2 flex-col">
+      <div class="bg-[#121212] rounded-xl flex flex-col justify-center h-[100px] px-3 py-2">
+        <div class="flex items-center gap-6 py-2 p-3 opacity-100 hover:opacity-100">
+          <i class="fa-solid fa-house text-xl"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="flex items-center gap-6 py-2 px-3 opacity-70 hover:opacity-100">
+          <i class="fa-solid fa-magnifying-glass text-xl"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <div class="bg-[#121212] rounded-xl flex-1 mt-2 px-3 py-2 overflow-y-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center px-3 gap-4 opacity-70 hover:opacity-100">
+            <img src="./assests/library_icon.png" class="h-5 w-5" />
+            <a href="#">Your Library</a>
+          </div>
+          <div class="flex text-xl">
+            <i class="fa-solid fa-plus mr-4 opacity-70 hover:opacity-100 cursor-pointer"></i>
+            <i class="fa-solid fa-arrow-right opacity-70 hover:opacity-100 cursor-pointer"></i>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="bg-[#232323] rounded-lg p-6 mb-6 mt-7">
+            <p class="text-base font-semibold">Create your first playlist</p>
+            <p class="text-sm opacity-90 pt-2 pb-2">It's easy, We'll help you</p>
+            <button class="bg-white text-black font-bold rounded-full px-4 h-8 mt-2">Create playlist</button>
+          </div>
+          <div class="bg-[#232323] rounded-lg p-7">
+            <p class="text-base font-semibold">Let's find some podcasts</p>
+            <p class="text-sm opacity-90 pt-2 pb-2">We'll kepp you updated on new episodes</p>
+            <button class="bg-white text-black font-bold rounded-full px-4 h-8 mt-2">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#121212] flex-1 rounded-xl overflow-y-auto px-4">
+      <div class="sticky top-0 bg-[#121212] flex justify-between items-center py-4 z-10">
+        <div class="flex gap-3 ml-3">
+          <img src="./assests/backward_icon.png" class="h-6" />
+          <img src="./assests/forward_icon.png" class="h-6 hidden md:block" />
+        </div>
+        <div class="flex items-center">
+          <button
+            class="hidden md:block bg-white text-black font-bold rounded-full px-4 h-8 mr-4">Explore Premium</button>
+          <button
+            class="bg-black text-white font-bold rounded-full border px-4 h-8 mr-4"><i
+              class="fa-regular fa-circle-down"></i> Install App</button>
+          <i class="fa-regular fa-user text-lg cursor-pointer"></i>
+        </div>
+      </div>
+      <h2 class="text-xl font-bold mb-3">Recently Played</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card1img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+      </div>
+      <h2 class="text-xl font-bold mt-6 mb-3">Trending near you</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card2img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card3img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card4img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card2img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card3img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card4img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card4img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+      </div>
+      <h2 class="text-xl font-bold mt-6 mb-3">Featured Charts</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card5img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top 50 - Global</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+        <div class="bg-[#232323] rounded-lg p-3">
+          <img src="./assests/card6img.jpeg" class="rounded-lg mb-2 w-full" />
+          <p class="font-semibold">Top songs - India</p>
+          <p class="text-sm opacity-50">Your daily update...</p>
+        </div>
+      </div>
+      <div class="h-[200px] flex items-center justify-center">
+        <div class="border-t border-white/40 w-[90%]"></div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="bg-black fixed bottom-0 w-full h-[72px] flex flex-col sm:flex-row justify-between items-center px-4 gap-2">
+    <div class="flex items-center gap-3 w-full sm:w-1/4">
+      <img src="./assests/card2img.jpeg" class="h-12 w-12 rounded" />
+      <div>
+        <p class="text-sm">Daylight</p>
+        <p class="text-xs opacity-40">David Kushner</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full sm:w-1/2">
+      <div class="flex items-center gap-4 mb-2">
+        <img src="./assests/player_icon1.png" class="h-4 opacity-70 hover:opacity-100" />
+        <img src="./assests/player_icon2.png" class="h-4 opacity-70 hover:opacity-100" />
+        <img src="./assests/player_icon3.png" class="h-8 opacity-100" />
+        <img src="./assests/player_icon4.png" class="h-4 opacity-70 hover:opacity-100" />
+        <img src="./assests/player_icon5.png" class="h-4 opacity-70 hover:opacity-100" />
+      </div>
+      <div class="flex items-center w-full justify-center gap-3">
+        <span class="text-xs">00:00</span>
+        <input type="range" min="0" max="100" step="1" class="w-[70%] accent-[#1bd760]" />
+        <span class="text-xs">03:33</span>
+      </div>
+    </div>
+    <div class="hidden sm:flex justify-end w-1/4 pr-4">
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+  </div>
+</body>
+</html>
